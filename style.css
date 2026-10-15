@@ -72,9 +72,13 @@ p {
     text-align: center;
     font-size: 1.75rem;
 }
-#sham-viewer {
+#sham-viewer{
     height: 150px;
     width:250px;
+}
+#sham-racer {
+    height: 150px;
+    width: 250px;
 }
 .payment-method {
     display: flex;
