@@ -1,6 +1,19 @@
 const supabaseurl = 'https://ohtmcodctiyawsgdrjuy.supabase.co'
 const supabasekey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9odG1jb2RjdGl5YXdzZ2RyanV5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE4MDg3ODcsImV4cCI6MjEwNzM4NDc4N30.ksKD6trl2YUUAfuuoMC3yyqPJhvzLvaCGM1n9BB_2NA'
 const _supabase = window.supabase.createClient(supabaseurl, supabasekey)
+// دالة تتحقق من تسجيل الدخول وتعيد التوجيه إذا لم يكن المستخدم مسجلاً الدخول
+async function checkAdminAuth() {
+    const { data: { session } } = await _supabase.auth.getSession();
+    if (!user) {
+        // إذا لم يكن هناك مستخدم مسجّل الدخول، أعد التوجيه إلى صفحة تسجيل الدخول
+        window.location.href = "login.html";
+        return
+    }
+}
+
+// نفذ الدالة تلقائياً عند تحميل الصفحة
+checkAdminAuth();
+
 async function loadrequests() {
     const container = document.getElementById('product-container')
     const {data: requests, error } = await _supabase.from('requests').select('*').eq('status', 'قيد الانتظار').order('created_at', { ascending: false })
