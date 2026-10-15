@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.links {
+    width: 100%;
+    background: #e0f0ff;
+    padding: 18px 0 12px 0;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 2px 8px 0 rgba(50,130,200,0.12);
+    margin-bottom: 35px;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+.links {
+    width: 100%;
+    background: #e0f0ff;
+    padding: 18px 0 12px 0;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 2px 8px 0 rgba(50,130,200,0.12);
+    margin-bottom: 35px;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    background: #2c86c6; /* أزرق غامق */
+    font-weight: bold;
+    font-size: 1.12em;
+    font-family: 'Tajawal', 'Cairo', Arial, sans-serif;
+    padding: 8px 18px;
+    border-radius: 15px;
+    transition: background 0.16s, color 0.16s;
+    outline: none;
+}
+
+/* تأثير hover و focus (عند الضغط) */
+.links a:hover,
+.links a:focus,
+.links a:active {
+    background: #1166bb; /* أزرق أفتح عند التحويم أو الضغط */
+    color: #fff;
+}
+
+.links a:hover {
+    background: #bfdcff;
+    color: #17476a;
+}
+#product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    justify-content: center;
+    justify-items: center;
+    width: max-content;
+    margin: 0 auto 24px auto;
+    padding: 18px 0;
+    height: max-content;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px 0 rgba(32,52,70,0.10);
+    padding: 20px 18px 15px 18px;
+  width: 100%;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin: 0;
+    height: auto !important;
+}
+img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+h3 {
+  margin: 0 auto;
+    font-size: 2rem;
+    width: 100%;
+text-align: center;
+    font-family: 'Tajawal', 'Cairo', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+img {
+    object-fit: cover;
+    margin-top: 20px;
+    width: 100%;
+}
+p {
+    margin: 4px 0;
+    align-self: stretch; /* اجعل العنصر يمتد بعرض الكرت */
+    font-size: 1.25rem;
+    color: #22304b;
+    font-family: 'Tajawal', 'Cairo', Arial, sans-serif;
+    background: #e6f3ff; /* خلفية زرقاء فاتحة */
+    border-radius: 7px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+}
+
+.button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 18px;
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+.button-row button {
+    background: #2c86c6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 22px;
+    font-size: 1.08em;
+    width: 100%;
+    font-family: 'Tajawal', 'Cairo', Arial, sans-serif;
+    cursor: pointer;
+ 
+    font-weight: bold;
+    transition: background 0.15s, color 0.15s;
+    outline: none;
+}
+.button-row button.accept {
+    background: #32ae6b;
+    padding: 20px;
+}
+.button-row button.reject {
+    background: #e04848;
+}
+.button-row button:hover {
+    background: #17476a;
+    color: #fff;
+}

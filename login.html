@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+    <div class="login-bg">
+        <form class="login-form" id="login-form">
+            <h2>تسجيل الدخول</h2>
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+            <label for="password">كلمة المرور</label>
+            <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور" required>
+            <button type="submit">دخول</button>
+        </form>
+    </div>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .login-bg {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #74cafc 0%, #4164c7 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-form {
+            background: rgba(255,255,255,0.92);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px 0 rgba(32,52,70,0.13);
+            padding: 38px 32px 24px 32px;
+            width: 98%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .login-form h2 {
+            text-align: center;
+            color: #285097;
+            font-family: 'Tajawal', 'Cairo', Arial, sans-serif;
+            margin-bottom: 12px;
+            margin-top: 0;
+        }
+        .login-form label {
+            font-family: 'Tajawal', 'Cairo', Arial, sans-serif;
+            color: #265ba6;
+            font-weight: 600;
+            margin-bottom: 4px;
+            text-align: right;
+        }
+        .login-form input {
+            font-family: 'Tajawal', 'Cairo', Arial, sans-serif;
+            padding: 11px;
+            border-radius: 9px;
+            border: 1.3px solid #c1d8fa;
+            margin-bottom: 5px;
+            outline: none;
+            transition: border 0.19s;
+            font-size: 1em;
+            background: #f8fafc;
+        }
+        .login-form input:focus {
+            border: 1.6px solid #5193ff;
+        }
+        .login-form button {
+            background: linear-gradient(90deg, #3b8bdb 0%, #4164c7 100%);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 0;
+            font-size: 1.1em;
+            font-family: 'Tajawal', 'Cairo', Arial, sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: background 0.18s;
+            box-shadow: 0 2px 8px 0 rgba(50,130,200,0.07);
+        }
+        .login-form button:hover {
+            background: linear-gradient(90deg, #4164c7 0%, #3b8bdb 100%);
+        }
+        @media (max-width: 500px) {
+            .login-form {
+                padding: 18px 5vw;
+            }
+        }
+        @media (max-width: 768px) {
+            .login-form {
+                width: 70%;
+            }
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="login.js"></script>
+</body>
+</html>

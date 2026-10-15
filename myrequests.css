@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    justify-content: center;
+    justify-items: center;
+    width: max-content;
+    margin: 0 auto 24px auto;
+    padding: 18px 0;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px 0 rgba(32,52,70,0.10);
+    padding: 20px 18px 15px 18px;
+    min-width: 220px;
+    max-width: 260px;
+    width: 100%;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h3 {
+  margin: 0 auto;
+    font-size: 2em;
+    width: 100%;
+text-align: center;
+margin-bottom: 10px;
+    font-family: 'Tajawal', 'Cairo', Arial, sans-serif;
+}
+img {
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 15px;
+    height: 200px;
+    width: 100%;
+}
+p {
+    margin: 4px 0;
+    width: 100%;
+    font-size: 1.25rem;
+    color: #22304b;
+    font-family: 'Tajawal', 'Cairo', Arial, sans-serif;
+    background: #e6f3ff; /* خلفية زرقاء فاتحة */
+    border-radius: 7px;
+    align-self: stretch;
+    box-sizing: border-box;
+    padding: 6px 10px;
+}
+.links {
+    width: 100%;
+    background: #e0f0ff;
+    padding: 18px 0 12px 0;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 2px 8px 0 rgba(50,130,200,0.12);
+    margin-bottom: 35px;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    background: #2c86c6; /* أزرق غامق */
+    font-weight: bold;
+    font-size: 1.12em;
+    font-family: 'Tajawal', 'Cairo', Arial, sans-serif;
+    padding: 8px 18px;
+    border-radius: 15px;
+    transition: background 0.16s, color 0.16s;
+    outline: none;
+}
+
+/* تأثير hover و focus (عند الضغط) */
+.links a:hover,
+.links a:focus,
+.links a:active {
+    background: #1166bb; /* أزرق أفتح عند التحويم أو الضغط */
+    color: #fff;
+}
+
+.links a:hover {
+    background: #bfdcff;
+    color: #17476a;
+}
+@media (max-width: 768px) {
+  
+}

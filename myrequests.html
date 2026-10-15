@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="myrequests.css">
+</head>
+<body>
+    <div class="links">
+        <a href="myrequests.html">التسجيلات</a>
+        <a href="index.html">الصفحة الرئيسية</a>
+    </div>
+    <div id="product-container"> جاري التحميل....</div>
+    <style>
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #e0f0ff; /* نفس لون خلفية الروابط بالأعلى */
+            padding: 18px 0 14px 0;
+            box-shadow: 0 -2px 8px 0 rgba(50,130,200,0.10);
+            border-radius: 14px 14px 0 0;
+            text-align: center;
+            z-index: 200;
+            margin-top: 15px;
+            gap: 7px;
+            font-family: 'Tajawal', 'Cairo', Arial, sans-serif;
+        }
+        .footer a {
+            background: none;
+            color: #2170b8;
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            font-size: 1.08em;
+            transition: color 0.17s;
+        }
+        .footer a:hover {
+            color: #17476a;
+        }
+        .footer span {
+            font-family: inherit;
+            color: #1b294e;
+        }
+        .footer p {
+            margin: 6px 0 2px 0;
+            color: #13355a;
+            font-weight: 500;
+            background: #e0f0ff; /* نفس لون خلفية الروابط بالأعلى */
+        }
+    </style>
+    <div class="footer">
+        <a href="https://wa.me/0938767095" style="font-size: 2rem;">created by <span>jafar aljajeh</span></a>
+        <p style="font-size: 1.50rem;">: التواصل عالأرقام التالية</p>
+        <a href="https://wa.me/0993954734" style="font-size: 1.50rem;">0993954734</a>
+        <a href="https://wa.me/0934129016" style="font-size: 1.50rem;">0934129016</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="myrequests.js"></script>
+</body>
+</html>
