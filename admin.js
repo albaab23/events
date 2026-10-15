@@ -33,14 +33,16 @@ requests.forEach(req => {
                 <h3>طلب مشاهد</h3>
                 <p>الاسم: ${req.first_name} ${req.second_name}</p>
                 <p>الحالة: ${req.status}</p>
+                <div class="button-row">
                  <button onclick="updateStatus('${req.id}', 'مقبول ✅')"
-                    style="background-color: #2ecc71; color: white; border: none; padding: 5px 10px; border-radius: 4px; margin-left: 5px; cursor:pointer;">
+                    style="background-color: #2ecc71; color: white; border: none; padding: 15px; border-radius: 15px; margin-left: 5px; cursor:pointer;">
                     قبول
                 </button>
                 <button onclick="updateStatus('${req.id}', 'مرفوض ❌')"
-                    style="background-color: #e74c3c; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor:pointer;">
+                    style="background-color: #e74c3c; color: white; border: none; padding: 10px; border-radius: 15px; cursor:pointer;">
                     رفض
                 </button>
+                </div>
             </div>
         `;
     } else {
