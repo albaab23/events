@@ -32,6 +32,7 @@ requests.forEach(req => {
             <div class="cart">
                 <h3>طلب مشاهد</h3>
                 <p>الاسم: ${req.first_name} ${req.second_name}</p>
+                 <p>كود التحقق: ${req. verification_code}</p>
                 <p>الحالة: ${req.status}</p>
                 <div class="button-row">
                  <button onclick="updateStatus('${req.id}', 'مقبول ✅')"
@@ -62,6 +63,7 @@ requests.forEach(req => {
           <p>الاسم: ${req.first_name} ${req.second_name}</p>
           <p>العمر: ${req.age}</p>
           <p>نوع السيارة: ${req.type}</p>
+           <p>كود التحقق: ${req. verification_code}</p>
           <p>الحالة: ${req.status}</p>
           ${imgHtml}
           <div class="button-row">
