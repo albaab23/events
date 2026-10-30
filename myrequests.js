@@ -4,8 +4,8 @@ const _supabase = window.supabase.createClient(supabaseurl, supabasekey)
 async function loadMyRequests() {
     let ids = JSON.parse(localStorage.getItem('myrequests')) || [];
     if (ids.length === 0) {
-      document.getElementById('requests-list').innerHTML = 
-        '<p>لا يوجد طلبات</p>';
+      document.getElementById('product-container').innerHTML =
+        '<p>لا توجد طلبات بعد</p>';
       return;
     }
     const { data, error } = await _supabase
@@ -25,6 +25,10 @@ async function loadMyRequests() {
   function displayRequests(requests) {
     const container = document.getElementById('product-container');
     container.innerHTML = '';
+    if (requests.length === 0) {
+      container.innerHTML = '<p>لا توجد طلبات بعد</p>';
+      return;
+    }
   
     requests.forEach(req => {
       if (req.service_type === 'مشاهد') {

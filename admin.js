@@ -4,7 +4,7 @@ const _supabase = window.supabase.createClient(supabaseurl, supabasekey)
 // دالة تتحقق من تسجيل الدخول وتعيد التوجيه إذا لم يكن المستخدم مسجلاً الدخول
 async function checkAdminAuth() {
     const { data: { session } } = await _supabase.auth.getSession();
-    if (!user) {
+    if (!session) {
         // إذا لم يكن هناك مستخدم مسجّل الدخول، أعد التوجيه إلى صفحة تسجيل الدخول
         window.location.href = "login.html";
         return
