@@ -45,12 +45,13 @@ body > img {
     background: var(--surface);
     object-fit: fill;
     object-position: center;
+
 }
 
 body > form > img {
     display: block;
     width: 100%;
-    height: clamp(180px, 30vw, 340px);
+    height: 200px;
     margin: 0 auto;
     border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -338,11 +339,11 @@ label[for="certf"] {
 .cart img {
     display: block;
     width: 100%;
-    max-height: 260px;
+    height: 200px;
     margin: 14px 0 0;
     border: 1px solid var(--border);
     border-radius: 12px;
-    object-fit: contain;
+    object-fit: fill;
     background: #11161a;
 }
 
